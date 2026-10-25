@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VOID/SEASON — Drop 03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#131313;--bone:#F7F5EA;--lime:#CCFF00;--pink:#FF3DBB;--blue:#4A5BFF;--green:#2EA463;--f:'Poppins',system-ui,sans-serif;--pad:clamp(14px,2.2vw,28px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--ink)}
+body{background:var(--ink);color:var(--bone);font:300 clamp(15px,1.25vw,19px)/1.4 var(--f);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.h{font:italic 900 1em/.92 var(--f);text-transform:uppercase;letter-spacing:-.02em}
+.j span{display:inline-block;will-change:transform}
+.j span.on{animation:jig .6s ease}
+@keyframes jig{20%{transform:translate(-.03em,-.07em) rotate(-5deg)}40%{transform:translate(.03em,.05em) rotate(4deg)}60%{transform:translate(-.02em,-.03em) rotate(-3deg)}80%{transform:translate(.01em,.02em) rotate(1deg)}}
+.pill{display:inline-flex;align-items:center;gap:10px;border-radius:14px;font:italic 900 15px/1 var(--f);text-transform:uppercase;padding:13px 18px}
+.btn{display:inline-flex;gap:6px;align-items:stretch;font:italic 900 15px/1 var(--f);text-transform:uppercase}
+.btn i{background:var(--ink);color:var(--bone);border-radius:10px;width:48px;display:grid;place-items:center;font-style:normal;font-size:20px;font-weight:300}
+.btn b{background:var(--ink);color:var(--bone);border-radius:10px;padding:18px 20px;font-weight:900}
+.btn:hover b,.btn:hover i{background:var(--bone);color:var(--ink)}
+
+nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 12px;background:rgba(19,19,19,.92)}
+nav .h{font-size:22px}
+nav div{display:flex;gap:clamp(14px,2.6vw,38px);align-items:center;font:italic 900 15px/1 var(--f);text-transform:uppercase}
+nav a:hover{color:var(--lime)}
+nav .pill{background:var(--pink);color:var(--ink)}
+
+.hero{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justify-content:center;padding:90px var(--pad) 40px;position:relative}
+.hero h1{font-size:clamp(70px,20.5vw,360px);line-height:.8}
+.hero h1 b{display:block;font-weight:inherit}
+.stk{position:absolute;right:clamp(14px,6vw,110px);top:clamp(100px,17vh,190px);transform:rotate(-8deg);font:italic 900 clamp(22px,3.8vw,56px)/.95 var(--f);text-transform:uppercase;text-align:center;z-index:2}
+.stk span{display:block;padding:0 .2em}
+.stk .a{color:var(--green)}.stk .b{color:var(--blue)}.stk .c{background:var(--pink);color:var(--bone)}
+.sub{margin-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-weight:500}
+
+.box{border-radius:28px;margin:0 var(--pad);padding:clamp(22px,4vw,56px);color:var(--ink)}
+.intro{background:var(--lime);text-align:center;margin-bottom:var(--pad)}
+.intro h2{font-size:clamp(38px,7.6vw,128px);max-width:15ch;margin:0 auto}
+.intro p{max-width:34ch;margin:clamp(30px,6vw,90px) 0 20px auto;text-align:left;font-weight:500;font-size:clamp(17px,1.9vw,26px)}
+
+.rows{padding:clamp(40px,6vw,90px) 0;overflow:hidden}
+.rows div{display:flex;gap:14px;width:max-content;margin-bottom:14px;animation:ml 38s linear infinite}
+.rows div:nth-child(2){animation-direction:reverse;margin-left:-300px}
+.rows span{border-radius:22px;padding:.12em .42em .08em;font:italic 900 clamp(48px,8.5vw,128px)/1.05 var(--f);text-transform:uppercase;white-space:nowrap}
+@keyframes ml{to{transform:translateX(-50%)}}
+.rows .l{background:var(--lime);color:var(--green)}.rows .p{background:var(--pink);color:var(--bone)}.rows .g{background:var(--green);color:var(--ink)}.rows .b{background:var(--blue);color:var(--lime)}.rows .w{background:var(--bone);color:var(--ink)}
+
+.sh{position:relative}
+.stage{position:sticky;top:0;height:100vh;height:100dvh;padding:74px 0 var(--pad)}
+.card{height:100%;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px;position:relative}
+.card.l{background:var(--lime)}.card.p{background:var(--pink)}
+.txt{display:flex;flex-direction:column;justify-content:space-between;min-height:0}
+.txt h3{font:300 clamp(54px,9vw,150px)/.9 var(--f);letter-spacing:-.03em}
+.txt p{font-weight:500;max-width:34ch;margin:0 0 22px}
+.chip{align-self:flex-start;font:italic 900 14px/1 var(--f);text-transform:uppercase;border:2px solid var(--ink);border-radius:99px;padding:9px 14px;margin-bottom:18px}
+.vid{position:relative;min-height:0}
+.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;-webkit-mask-image:radial-gradient(ellipse 60% 66% at 50% 50%,#000 52%,transparent 100%);mask-image:radial-gradient(ellipse 60% 66% at 50% 50%,#000 52%,transparent 100%)}
+.bar{position:absolute;left:clamp(22px,4vw,56px);right:clamp(22px,4vw,56px);bottom:14px;height:3px;background:rgba(19,19,19,.18);border-radius:3px}
+.bar i{display:block;height:100%;width:0;background:var(--ink);border-radius:3px}
+
+.drop{background:var(--blue);color:var(--bone);margin-top:var(--pad)}
+.drop h2{font-size:clamp(36px,7vw,112px);max-width:14ch}
+.clock{display:flex;gap:clamp(10px,3vw,40px);margin:clamp(24px,4vw,56px) 0;flex-wrap:wrap}
+.clock b{display:block;font:italic 900 clamp(48px,11vw,170px)/1 var(--f);color:var(--lime);font-variant-numeric:tabular-nums}
+.clock span{font-weight:500;font-size:14px}
+.drop .btn i,.drop .btn b{background:var(--lime);color:var(--ink)}
+
+footer{padding:clamp(48px,7vw,100px) var(--pad) calc(var(--pad) + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1.4fr 1fr 1fr 1.5fr;gap:clamp(24px,4vw,60px)}
+footer h4{font:500 13px/1 var(--f);color:#9a988e;margin-bottom:16px;text-transform:uppercase;letter-spacing:.08em}
+footer li{list-style:none;margin-bottom:10px}footer li a:hover{color:var(--lime)}
+footer .h{font-size:34px;margin-bottom:12px}
+footer p{color:#9a988e;max-width:30ch}
+form{display:flex;gap:8px;flex-wrap:wrap}
+input{flex:1 1 170px;min-width:0;background:transparent;border:1px solid #555;border-radius:10px;color:var(--bone);padding:15px;font:inherit}
+form button{background:var(--lime);color:var(--ink);border:0;border-radius:10px;padding:15px 20px;font:italic 900 14px/1 var(--f);text-transform:uppercase;cursor:pointer}
+#ok{margin-top:10px;color:var(--lime);min-height:1.4em;font-size:14px}
+.legal{grid-column:1/-1;border-top:1px solid #333;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#9a988e;font-size:13px}
+
+@media (max-width:760px){
+ nav div a:not(.pill){display:none}
+ .card{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);gap:0}
+ .txt{justify-content:flex-start}.txt h3{font-size:clamp(44px,15vw,80px)}.txt p{font-size:14px;margin-bottom:12px}.btn{display:none}
+ .stk{top:90px}.intro p{margin-left:0}
+ footer{grid-template-columns:1fr 1fr}footer>div:first-child,footer>div:last-of-type{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){.rows div{animation:none}.j span.on{animation:none}}
+</style></head>
+<body>
+<nav><a href="#top" class="h">Void/Season</a><div><a href="#front">The Hoodie</a><a href="#drop">Drop 03</a><a href="#info">Info</a><a class="pill" href="#info">Get access</a></div></nav>
+
+<header class="hero" id="top">
+  <div class="stk" aria-hidden="true"><span class="a">Drop 03</span><span class="b">15 Nov</span><span class="c">200 pcs</span></div>
+  <h1 class="h j" aria-label="Void Season"><b data-j>Void/</b><b data-j>Season</b></h1>
+  <div class="sub"><span>Limited streetwear. One drop at a time.</span><span>Scroll ↓</span></div>
+</header>
+
+<section class="box intro">
+  <h2 class="h j" data-j>A drop for the whole crew</h2>
+  <p>Two hundred pieces, one heavyweight zip hoodie, and no restocks. Built for the ones who show up before it sells out.</p>
+</section>
+
+<div class="rows" aria-hidden="true">
+  <div><span class="p">Limited</span><span class="g">No restocks</span><span class="w">Heavyweight</span><span class="b">Drop 03</span><span class="l">Zip hoodie</span><span class="p">Limited</span><span class="g">No restocks</span><span class="w">Heavyweight</span><span class="b">Drop 03</span><span class="l">Zip hoodie</span></div>
+  <div><span class="l">200 pieces</span><span class="b">Neon lime</span><span class="p">Full zip</span><span class="w">Void/Season</span><span class="g">Made loud</span><span class="l">200 pieces</span><span class="b">Neon lime</span><span class="p">Full zip</span><span class="w">Void/Season</span><span class="g">Made loud</span></div>
+</div>
+
+<section class="sh" id="front" data-v style="height:380vh">
+  <div class="stage"><div class="box card l">
+    <div class="txt"><div><div class="chip">01 Front</div><h3 class="j" data-j>The Void Zip</h3></div>
+    <div><p>Plain black on the front. Then it turns around. Heavyweight fleece, oversized fit, one loud neon print across the back.</p><a class="btn" href="#info"><i>↗</i><b>Get early access</b></a></div></div>
+    <div class="vid"><video src="assets/orbit.mp4" muted playsinline preload="auto" tabindex="-1"></video></div>
+    <div class="bar"><i></i></div>
+  </div></div>
+</section>
+
+<section class="sh" data-v style="height:340vh">
+  <div class="stage"><div class="box card p">
+    <div class="txt"><div><div class="chip">03 Inside</div><h3 class="j" data-j>Neon Lining</h3></div>
+    <div><p>Full-length zip. Open it up and the lining hits you in the same lime as the print. Scroll to open it.</p><a class="btn" href="#info"><i>↗</i><b>Join the list</b></a></div></div>
+    <div class="vid"><video src="assets/zip.mp4" muted playsinline preload="auto" tabindex="-1"></video></div>
+    <div class="bar"><i></i></div>
+  </div></div>
+</section>
+
+<section class="box drop" id="drop">
+  <h2 class="h j" data-j>Drop 03 opens soon</h2>
+  <div class="clock" role="timer"><div><b id="dd">00</b><span>Days</span></div><div><b id="hh">00</b><span>Hours</span></div><div><b id="mm">00</b><span>Minutes</span></div><div><b id="ss">00</b><span>Seconds</span></div></div>
+  <a class="btn" href="#info"><i>↗</i><b>Get the link first</b></a>
+</section>
+
+<footer id="info">
+  <div><div class="h">Void/Season</div><p>Limited streetwear released in numbered drops. No restocks.</p></div>
+  <div><h4>Shop</h4><ul><li><a href="#front">Zip hoodie</a></li><li><a href="#drop">Drop 03</a></li><li><a href="#info">Size guide</a></li></ul></div>
+  <div><h4>Help</h4><ul><li><a href="#info">Shipping</a></li><li><a href="#info">Returns</a></li><li><a href="#info">Contact</a></li></ul></div>
+  <div><h4>Drop alerts</h4><form id="f"><input type="email" required placeholder="Email address" aria-label="Email address"><button type="submit">Join</button></form><div id="ok" role="status"></div></div>
+  <div class="legal"><span>© 2026 Void/Season. All rights reserved.</span><span>Privacy · Terms · Instagram</span></div>
+</footer>
+
+<script>
+(function(){
+  var cl=function(v,a,b){return Math.max(a,Math.min(b,v))},rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var L=[];
+  document.querySelectorAll('[data-j]').forEach(function(el){
+    var t=el.textContent;el.textContent='';el.setAttribute('aria-label',t);
+    t.split(' ').forEach(function(w,wi,a){var wd=document.createElement('span');wd.style.cssText='display:inline-block;white-space:nowrap';wd.setAttribute('aria-hidden','true');
+      w.split('').forEach(function(c){var s=document.createElement('span');s.textContent=c;wd.appendChild(s);L.push(s)});
+      el.appendChild(wd);if(wi<a.length-1)el.appendChild(document.createTextNode(' '))});
+  });
+  L.forEach(function(s){s.addEventListener('mouseenter',function(){s.classList.remove('on');void s.offsetWidth;s.classList.add('on')});s.addEventListener('animationend',function(){s.classList.remove('on')})});
+  var secs=[].slice.call(document.querySelectorAll('[data-v]')).map(function(s){var v=s.querySelector('video');return{s:s,v:v,b:s.querySelector('.bar i'),t:0,c:0}});
+  secs.forEach(function(o){o.v.pause();o.v.load()});
+  var last=scrollY,vel=0,T=0;
+  function tick(){
+    T++;vel+=((scrollY-last)-vel)*.15;last=scrollY;
+    secs.forEach(function(o){var r=o.s.getBoundingClientRect(),p=cl(-r.top/(o.s.offsetHeight-innerHeight),0,1);
+      if(o.v.duration){o.t=p*(o.v.duration-.1);o.c+=(o.t-o.c)*.14;if(Math.abs(o.v.currentTime-o.c)>.015)o.v.currentTime=o.c}
+      o.b.style.width=(p*100)+'%'});
+    if(!rm){var m=Math.min(Math.abs(vel),50);
+      for(var i=0;i<L.length;i++){var s=L[i];if(s.classList.contains('on'))continue;
+        var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight){s.style.translate='';continue}
+        s.style.translate='0 '+(Math.sin(T/9+i*.8)*m*.5).toFixed(1)+'px';s.style.rotate=(Math.sin(T/11+i)*m*.12).toFixed(1)+'deg'}}
+    requestAnimationFrame(tick)}
+  requestAnimationFrame(tick);
+  var end=new Date('2026-11-15T18:00:00').getTime(),P=function(v){return String(v).padStart(2,'0')};
+  function clock(){var s=Math.floor(Math.max(0,end-Date.now())/1000);
+    dd.textContent=P(Math.floor(s/86400));hh.textContent=P(Math.floor(s%86400/3600));mm.textContent=P(Math.floor(s%3600/60));ss.textContent=P(s%60)}
+  clock();setInterval(clock,1000);
+  document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').textContent='You’re on the list. We’ll send the Drop 03 link before it opens.';e.target.reset()});
+})();
+</script></body></html>
